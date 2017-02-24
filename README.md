@@ -1,4 +1,4 @@
-# challange two
+# Challenge Two
 
 ### 1) Finish the `POST` route for /api/products. Use POSTMAN to create some products. Hint: Find the error in `models/product`
 
