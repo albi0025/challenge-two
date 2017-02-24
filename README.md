@@ -1,6 +1,7 @@
 # Challenge Two
 
-### 1) Finish the `POST` route for /api/products. Use POSTMAN to create some products. Hint: Find the error in `models/product`
+### 1) Finish the `POST` route for /api/products.
+##### Use POSTMAN to create some products. Hint: Find the error in `models/product`
 
 ### 2) Fix index.ejs to render actual products from our database.
 ##### You will need to update the route in `server.js` that serves index.ejs.
