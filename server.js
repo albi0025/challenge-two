@@ -6,6 +6,8 @@ var Product = require('./models/product');
 var productRouter = require('./routes/products')
 var port = process.env.PORT || 8080;
 
+mongoose.connect('mongodb://localhost/challengeTwo');
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static('public'));
