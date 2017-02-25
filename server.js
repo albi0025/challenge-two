@@ -19,7 +19,7 @@ app.get('/', function(req, res) {
   // and then render the index page
   // For inspiration, look at the GET route in routers/products
 
-  res.render('index')
+  res.render('index');
 });
 
 app.use('/api', somethingRouter);
