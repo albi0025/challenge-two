@@ -23,9 +23,5 @@ app.get('/', function(req, res) {
 app.use('/api', somethingRouter);
 
 app.listen(port, function(err) {
-  if (err) {
-    console.log('app failed! ' + err);
-  } else {
-    console.log('app listening on ' + port);
-  }
+  console.log('app listening on ' + port);
 });
