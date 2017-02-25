@@ -2,18 +2,18 @@ var express = require('express');
 var Product = require('../models/product');
 var router = express.Router();
 
-router.use(function(req, res, next){
+router.use(function(req, res, next) {
   console.log('something is happening!');
   next();
 });
 
 router.route('/products')
   .get(function(req, res, next){
-    Product.find(function(err, products){
+    Product.find(function(err, products) {
       if(err){
         return next(err);
       } else {
-        res.json(products)
+        res.json(products);
       }
     });
   })
