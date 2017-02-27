@@ -4,9 +4,14 @@ var addProduct = function(event){
   event.preventDefault();
 
   var name = $('#name').val();
-  var inStock = $('#SOMETHING').val();
+  var inStock = $('#inStock').val();
+  var cost= $('#cost').val();
 
-  var product = {};
+  var product = {
+    name: name,
+    inStock: inStock,
+    cost: cost
+  };
 
   $.ajax({
     url: '/api/products',
@@ -18,6 +23,9 @@ var addProduct = function(event){
 
     //BONUS: Update the products table without
     // refreshing the page...
+    var tr = '<tr><td>' + data.name + '</td><td>' + data.cost + '</td><td>' + data.inStock + '</td></tr>'
+    var table = $('#productTable tr:last').after(tr);
+
 
   });
 };
